@@ -8,7 +8,7 @@ yarn
 yarn build
 cd dist/electron
 mkdir install_dir
-dpkg-deb -R LBRY_0.34.0-rc.5.deb install_dir
+dpkg-deb -R LBRY_*.deb install_dir
 echo "This instalation script asumes you have installed the correct dependencies installed in order to run LBRY, the current dependencies are:"
 echo ""
 grep "Depends: " "install_dir/DEBIAN/control"
